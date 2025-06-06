@@ -1,0 +1,82 @@
+#cute-cat-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+#cute-cat-sprite {
+  position: absolute;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: auto 32px;
+  image-rendering: pixelated;
+  transition: none; /* Remove transition for manual control */
+  transform-origin: bottom center;
+  transform: scale(2); /* Enlarge cat to make it more visible */
+  pointer-events: auto; /* Allow clicks on cat */
+  cursor: pointer; /* Show pointer cursor to indicate it's clickable */
+}
+
+/* Static animations only */
+#cute-cat-sprite.sleeping {
+  animation: sleep 3s ease-in-out infinite;
+}
+
+#cute-cat-sprite.sitting {
+  animation: sit 2s ease-in-out infinite;
+}
+
+#cute-cat-sprite.idle {
+  animation: idle 4s ease-in-out infinite;
+}
+
+/* Keyframes for static animations */
+@keyframes sleep {
+  0%, 100% { 
+    opacity: 1; 
+  }
+  50% { 
+    opacity: 0.7; 
+  }
+}
+
+@keyframes sit {
+  0%, 100% { 
+    transform: scale(2); 
+  }
+  50% { 
+    transform: scale(2.05); 
+  }
+}
+
+@keyframes idle {
+  0%, 100% { 
+    transform: scale(2); 
+  }
+  25% { 
+    transform: scale(2.02); 
+  }
+  75% { 
+    transform: scale(1.98); 
+  }
+}
+
+/* Styles for accessories */
+.cat-accessory {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  image-rendering: pixelated;
+} 

@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "CuteCat",
+  "version": "1.2",
+  "description": "Un adorable chat animé qui se promène au bas de vos pages web. Personnalisable avec 20+ skins, interactions et environnement complet (lit, jouet). Extension légère et amusante pour égayer votre navigation !",
+  "permissions": ["storage", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "js": [
+        "js/namespace.js",
+        "js/StorageManager.js",
+        "js/SpriteManager.js",
+        "js/PositionManager.js",
+        "js/StyleManager.js",
+        "js/CatBed.js",
+        "js/CatToy.js",
+        "js/CuteCat.js",
+        "js/boot.js"
+      ],
+      "css": ["styles/cat-overlay.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Chat Mignon - Paramètres",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "32": "assets/icon.png"
+    }
+  },
+  "web_accessible_resources": [
+    "assets/cats/*/*.png",
+    "assets/materials/*.png"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self' data: chrome-extension: moz-extension:",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "applications": {
+    "gecko": {
+      "id": "chat-mignon@ctrl-v.fr",
+      "strict_min_version": "58.0"
+    }
+  },
+  "icons": {
+    "16": "assets/icon.png",
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "96": "assets/icon.png"
+  }
+} 

@@ -1,0 +1,12 @@
+# Ce fichier maintient la structure du dossier de ce skin de chat
+# Les fichiers .png ne sont pas inclus dans le dépôt conformément à la licence du pack d'assets
+# 
+# Fichiers nécessaires (à obtenir via le Cat Pixel Mega Pack) :
+# - idlecat.png, idle2cat.png
+# - runcat.png
+# - jumpcat.png
+# - sleepcat.png
+# - sittingcat.png
+# - attackcat.png
+# - hurtcat.png
+# - diecat.png, die2cat.png 

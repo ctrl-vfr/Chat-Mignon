@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f7b708 0%, #d35807 100%);
+      color: white;
+      margin: 0;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .header h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .header p {
+      margin: 5px 0 0 0;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    
+    .skin-selector {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .skin-selector h3 {
+      margin: 0 0 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    .skin-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    
+    .skin-option {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .skin-option:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+    
+    .skin-option.selected {
+      border-color: #4CAF50;
+      background: rgba(76, 175, 80, 0.3);
+    }
+    
+    .skin-preview {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-bottom: 5px;
+      image-rendering: pixelated;
+    }
+    
+    .skin-name {
+      font-size: 11px;
+      font-weight: 500;
+    }
+    
+    .controls {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+    }
+    
+    .control-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .control-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .control-label {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    
+    .toggle-switch {
+      position: relative;
+      width: 40px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .toggle-switch.active {
+      background: #4CAF50;
+    }
+    
+    .toggle-switch::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+    
+    .toggle-switch.active::after {
+      transform: translateX(20px);
+    }
+    
+    .save-btn {
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 15px;
+    }
+    
+    .save-btn:hover {
+      background: #45a049;
+    }
+    
+    .status {
+      text-align: center;
+      font-size: 11px;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🐱 Chat Mignon</h1>
+    <p>Choisissez votre compagnon félin</p>
+  </div>
+  
+  <div class="skin-selector">
+    <h3>Skins disponibles</h3>
+    <div class="skin-grid" id="skinGrid">
+      <!-- Skins will be added dynamically -->
+    </div>
+  </div>
+  
+  <div class="controls">
+    <div class="control-item">
+      <span class="control-label">Chat désactivé</span>
+      <div class="toggle-switch" id="chatDisabledToggle"></div>
+    </div>
+  </div>
+  
+  <button class="save-btn" id="saveBtn">Sauvegarder</button>
+  <div class="status" id="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 

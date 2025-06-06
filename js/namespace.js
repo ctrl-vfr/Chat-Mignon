@@ -1,0 +1,1 @@
+window.CC = window.CC || {};
