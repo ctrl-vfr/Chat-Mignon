@@ -4,8 +4,6 @@ Une extension Firefox opensource qui ajoute un adorable chat animé au bas de ch
 
 ## 🔥 Installation
 
-[![Installer sur Firefox](https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png)](https://addons.mozilla.org/en-US/firefox/addon/chat-mignon/)
-
 **[Télécharger l'extension sur Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/chat-mignon/)**
 
 ## 🎬 Vidéo de Présentation
