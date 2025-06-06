@@ -2,6 +2,12 @@
 
 Une extension Firefox opensource qui ajoute un adorable chat animé au bas de chaque page web ! Votre petit compagnon félin se promènera, sautera, dormira et vous divertira pendant votre navigation.
 
+## 🔥 Installation
+
+[![Installer sur Firefox](https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png)](https://addons.mozilla.org/en-US/firefox/addon/chat-mignon/)
+
+**[Télécharger l'extension sur Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/chat-mignon/)**
+
 ## 🎬 Vidéo de Présentation
 
 [![Regarder la présentation](https://img.youtube.com/vi/213R7YDWRdQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=213R7YDWRdQ)
@@ -15,7 +21,6 @@ Une extension Firefox opensource qui ajoute un adorable chat animé au bas de ch
 - **Environnement interactif** : lit, jouet, animations d'attaque
 - **Personnalisation complète** : déplacez les éléments où vous voulez
 - **Interface simple** : activez/désactivez facilement via le popup
-- **Performance optimisée** : animations fluides sans ralentir votre navigation
 
 ## 🎨 Pack d'Assets - Cat Pixel Mega Pack
 
@@ -55,7 +60,7 @@ Pour utiliser cette extension avec les sprites complets :
 
 ## 🛠️ Installation et Utilisation
 
-1. **Installez** l'extension depuis le Firefox Add-ons
+1. **Installez** l'extension depuis [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/chat-mignon/)
 2. **Configurez** : Cliquez sur l'icône du chat dans la barre d'outils
 3. **Choisissez** votre skin préféré
 4. **Déplacez** le lit et le jouet en les faisant glisser
@@ -64,15 +69,12 @@ Pour utiliser cette extension avec les sprites complets :
 ## 🎮 Comportements du Chat
 
 - **Déplacement aléatoire** : course, saut, position assise
-- **Sommeil sur le lit** : le chat ne dort que sur son lit
+- **Sommeil sur le lit** : le chat dort sur son lit
 - **Attaque du jouet** : interactions aléatoires (1 chance sur 3)
-- **Réaction aux clics** : animations de réaction et système de "vie"
 
 ## 👤 Crédits
 
-- **Extension développée par** : [Votre nom]
-- **Assets par** : [ToffeeCraft](https://toffeecraft.itch.io/)
-- **Pack utilisé** : Cat Pixel Mega Pack
+- **Assets par** : [ToffeeCraft](https://toffeecraft.itch.io/) (Cat Pixel Mega Pack)
 
 ## 📄 Licence
 
